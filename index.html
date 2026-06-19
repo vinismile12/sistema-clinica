@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Bem Viver — Cuidando de quem você é</title>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAVBAR ──────────────────────────────────────────────── -->
+<nav>
+  <a href="#inicio" class="nav-logo">
+    <div class="nav-logo-mark">B</div>
+    Bem Viver
+  </a>
+
+  <div class="nav-links">
+    <a href="#especialidades">Especialidades</a>
+    <a href="#profissionais">Profissionais</a>
+    <a href="#agendamento">Agendamento</a>
+    <a href="#agendamento" class="nav-cta">Agendar consulta</a>
+  </div>
+
+  <button class="hamburger" aria-label="Abrir menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Menu mobile -->
+<div class="nav-mobile" id="navMobile">
+  <a href="#especialidades" onclick="toggleMenu()">Especialidades</a>
+  <a href="#profissionais"  onclick="toggleMenu()">Profissionais</a>
+  <a href="#agendamento"    onclick="toggleMenu()">Agendamento</a>
+  <a href="#agendamento"    onclick="toggleMenu()" class="nav-cta" style="margin:12px 20px; border-radius:100px; text-align:center;">Agendar consulta</a>
+</div>
+
+<!-- ── HERO ────────────────────────────────────────────────── -->
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      Atendimento disponível
+    </div>
+    <h1>Cuidar de você<br>é o que fazemos<br><em>todos os dias.</em></h1>
+    <p>A Clínica Bem Viver oferece atendimento humanizado com profissionais especializados. Cuide da sua saúde com quem realmente entende de você.</p>
+    <div class="hero-actions">
+      <a href="#agendamento" class="btn-primary">Agendar consulta →</a>
+      <button class="btn-outline" onclick="openChat()">💬 Falar com assistente</button>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="hero-card">
+      <div class="hero-card-tag">Próximo horário disponível</div>
+      <h3>Cardiologia · Dr. Bruno Melo</h3>
+      <p>Amanhã às 9h00 · Presencial</p>
+    </div>
+    <div class="hero-stat-row">
+      <div class="hero-stat">
+        <strong>12+</strong>
+        <span>Especialidades</span>
+      </div>
+      <div class="hero-stat">
+        <strong>18</strong>
+        <span>Profissionais</span>
+      </div>
+      <div class="hero-stat">
+        <strong>4.9★</strong>
+        <span>Avaliação</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-tag">Horário de atendimento</div>
+      <h3>Segunda a Sábado</h3>
+      <p>Das 7h00 às 19h00 · Teresina, PI</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── ESPECIALIDADES ───────────────────────────────────────── -->
+<section id="especialidades">
+  <div class="especialidades-header">
+    <div class="section-label">O que tratamos</div>
+    <h2 class="section-title">Especialidades médicas</h2>
+    <p class="section-desc">Uma equipe completa para cuidar de você em todas as fases da vida.</p>
+  </div>
+
+  <div class="especialidades-grid">
+    <div class="esp-card">
+      <div class="esp-icon">🫀</div>
+      <h3>Cardiologia</h3>
+      <p>Diagnóstico e tratamento de doenças do coração e sistema cardiovascular.</p>
+    </div>
+    <div class="esp-card">
+      <div class="esp-icon">🧠</div>
+      <h3>Neurologia</h3>
+      <p>Cuidados com o sistema nervoso, cérebro e coluna vertebral.</p>
+    </div>
+    <div class="esp-card">
+      <div class="esp-icon">🩺</div>
+      <h3>Clínica Geral</h3>
+      <p>Atendimento preventivo e acompanhamento da saúde geral do paciente.</p>
+    </div>
+    <div class="esp-card">
+      <div class="esp-icon">🦴</div>
+      <h3>Ortopedia</h3>
+      <p>Tratamento de lesões, ossos, articulações, músculos e tendões.</p>
+    </div>
+    <div class="esp-card">
+      <div class="esp-icon">👶</div>
+      <h3>Pediatria</h3>
+      <p>Saúde e desenvolvimento de bebês, crianças e adolescentes.</p>
+    </div>
+    <div class="esp-card">
+      <div class="esp-icon">🧘</div>
+      <h3>Psiquiatria</h3>
+      <p>Diagnóstico e acompanhamento de saúde mental e bem-estar emocional.</p>
+    </div>
+    <div class="esp-card">
+      <div class="esp-icon">👁️</div>
+      <h3>Oftalmologia</h3>
+      <p>Cuidados completos com a saúde dos olhos e visão.</p>
+    </div>
+    <div class="esp-card">
+      <div class="esp-icon">🩻</div>
+      <h3>Endocrinologia</h3>
+      <p>Tratamento de distúrbios hormonais, diabetes e tireoide.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROFISSIONAIS ────────────────────────────────────────── -->
+<section id="profissionais">
+  <div class="profs-header">
+    <div class="section-label">Quem cuida de você</div>
+    <h2 class="section-title">Nossa equipe médica</h2>
+    <p class="section-desc">Profissionais qualificados, com experiência e dedicação ao seu bem-estar.</p>
+  </div>
+
+  <div class="profs-grid">
+    <div class="prof-card">
+      <div class="prof-avatar" style="background:#5C7A6B;">BM</div>
+      <h3>Dr. Bruno Melo</h3>
+      <div class="esp-label">Cardiologia</div>
+      <p>Especialista em cardiologia intervencionista com 15 anos de experiência.</p>
+      <div class="crm">CRM 12.345-PI</div>
+    </div>
+    <div class="prof-card">
+      <div class="prof-avatar" style="background:#C17B4E;">AF</div>
+      <h3>Dra. Amanda Freitas</h3>
+      <div class="esp-label">Neurologia</div>
+      <p>Doutora em neurociências, referência em tratamento de enxaquecas crônicas.</p>
+      <div class="crm">CRM 23.456-PI</div>
+    </div>
+    <div class="prof-card">
+      <div class="prof-avatar" style="background:#7B5EA7;">RC</div>
+      <h3>Dr. Rafael Costa</h3>
+      <div class="esp-label">Ortopedia</div>
+      <p>Especialista em cirurgia do joelho e medicina esportiva.</p>
+      <div class="crm">CRM 34.567-PI</div>
+    </div>
+    <div class="prof-card">
+      <div class="prof-avatar" style="background:#4A8FA8;">LS</div>
+      <h3>Dra. Luciana Santos</h3>
+      <div class="esp-label">Pediatria</div>
+      <p>Pediatra com foco em desenvolvimento infantil e puericultura.</p>
+      <div class="crm">CRM 45.678-PI</div>
+    </div>
+    <div class="prof-card">
+      <div class="prof-avatar" style="background:#A85C5C;">MO</div>
+      <h3>Dr. Marcos Oliveira</h3>
+      <div class="esp-label">Psiquiatria</div>
+      <p>Especialista em transtornos de ansiedade e saúde mental integrativa.</p>
+      <div class="crm">CRM 56.789-PI</div>
+    </div>
+    <div class="prof-card">
+      <div class="prof-avatar" style="background:#5C7A6B;">PL</div>
+      <h3>Dra. Paula Lima</h3>
+      <div class="esp-label">Clínica Geral</div>
+      <p>Médica generalista com abordagem preventiva e humanizada.</p>
+      <div class="crm">CRM 67.890-PI</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── AGENDAMENTO ──────────────────────────────────────────── -->
+<section id="agendamento">
+  <div class="sched-info">
+    <div class="section-label">Agende sua consulta</div>
+    <h2 class="section-title">Simples, rápido e sem burocracia</h2>
+    <p>Escolha a data, o profissional e a especialidade. Confirmamos seu agendamento por WhatsApp ou e-mail.</p>
+
+    <div class="sched-steps">
+      <div class="sched-step">
+        <div class="step-num">1</div>
+        <div>
+          <h4>Escolha a especialidade</h4>
+          <p>Selecione a área de saúde que precisa de cuidado.</p>
+        </div>
+      </div>
+      <div class="sched-step">
+        <div class="step-num">2</div>
+        <div>
+          <h4>Selecione data e horário</h4>
+          <p>Veja os horários disponíveis e escolha o mais conveniente.</p>
+        </div>
+      </div>
+      <div class="sched-step">
+        <div class="step-num">3</div>
+        <div>
+          <h4>Confirme seus dados</h4>
+          <p>Preencha as informações básicas para finalizar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-wrapper">
+    <div class="form-title">Formulário de agendamento</div>
+    <form id="schedForm" onsubmit="submitForm(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nome completo *</label>
+          <input type="text" id="f-nome" placeholder="Seu nome completo" required>
+        </div>
+        <div class="form-group">
+          <label>Telefone / WhatsApp *</label>
+          <input type="tel" id="f-tel" placeholder="(86) 9 0000-0000" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>E-mail</label>
+        <input type="email" id="f-email" placeholder="seu@email.com">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Especialidade *</label>
+          <select id="f-esp" required>
+            <option value="">Selecionar</option>
+            <option>Cardiologia</option>
+            <option>Neurologia</option>
+            <option>Clínica Geral</option>
+            <option>Ortopedia</option>
+            <option>Pediatria</option>
+            <option>Psiquiatria</option>
+            <option>Oftalmologia</option>
+            <option>Endocrinologia</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Profissional de preferência</label>
+          <select id="f-prof">
+            <option value="">Sem preferência</option>
+            <option>Dr. Bruno Melo</option>
+            <option>Dra. Amanda Freitas</option>
+            <option>Dr. Rafael Costa</option>
+            <option>Dra. Luciana Santos</option>
+            <option>Dr. Marcos Oliveira</option>
+            <option>Dra. Paula Lima</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Data desejada *</label>
+          <input type="date" id="f-data" required>
+        </div>
+        <div class="form-group">
+          <label>Horário desejado *</label>
+          <select id="f-hora" required>
+            <option value="">Selecionar</option>
+            <option>07:00</option>
+            <option>08:00</option>
+            <option>09:00</option>
+            <option>10:00</option>
+            <option>11:00</option>
+            <option>13:00</option>
+            <option>14:00</option>
+            <option>15:00</option>
+            <option>16:00</option>
+            <option>17:00</option>
+            <option>18:00</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Observações (opcional)</label>
+        <textarea id="f-obs" rows="3" placeholder="Ex: primeira consulta, sintomas, preferência de atendimento..."></textarea>
+      </div>
+
+      <button type="submit" class="form-submit">Enviar solicitação de agendamento →</button>
+      <p class="form-note">🔒 Seus dados são protegidos e usados apenas para o agendamento. Retornaremos em até 2 horas.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ── FOOTER ───────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#inicio" class="nav-logo">
+        <div class="nav-logo-mark">B</div>
+        Bem Viver
+      </a>
+      <p>Cuidado humano, diagnóstico preciso e acolhimento em cada consulta. Sua saúde em boas mãos.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Clínica</h4>
+      <a href="#especialidades">Especialidades</a>
+      <a href="#profissionais">Profissionais</a>
+      <a href="#agendamento">Agendamento</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <a href="tel:+558630000000">(86) 3000-0000</a>
+      <a href="https://wa.me/5586900000000" target="_blank">WhatsApp</a>
+      <a href="mailto:contato@bemviver.com.br">contato@bemviver.com.br</a>
+      <a>Av. Frei Serafim, 100 · Teresina, PI</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Clínica Bem Viver. Todos os direitos reservados.</span>
+    <span>Atendimento: Seg–Sáb, 7h–19h</span>
+  </div>
+</footer>
+
+<!-- ── CHATBOT FAB ──────────────────────────────────────────── -->
+<button class="chat-fab" onclick="toggleChat()" id="chatFab" aria-label="Abrir assistente de agendamento">
+  <span id="chatFabIcon">💬</span>
+  <span class="chat-fab-label">Agendar pelo chat</span>
+</button>
+
+<!-- ── CHATBOT PANEL ────────────────────────────────────────── -->
+<div class="chat-panel" id="chatPanel" role="dialog" aria-label="Assistente de agendamento">
+  <div class="chat-header">
+    <div class="chat-avatar">🌿</div>
+    <div class="chat-header-info">
+      <h4>Assistente Bem Viver</h4>
+      <span>Agendamento online</span>
+    </div>
+    <div class="chat-online" title="Online"></div>
+    <button class="chat-close" onclick="toggleChat()" aria-label="Fechar chat">×</button>
+  </div>
+
+  <div class="chat-messages" id="chatMessages"></div>
+
+  <div class="chat-options" id="chatOptions"></div>
+
+  <div class="chat-input-row">
+    <input
+      type="text"
+      class="chat-input"
+      id="chatInput"
+      placeholder="Digite sua mensagem..."
+      onkeydown="handleKey(event)"
+      autocomplete="off"
+    >
+    <button class="chat-send" id="chatSend" onclick="sendUserMessage()" aria-label="Enviar mensagem">➤</button>
+  </div>
+</div>
+
+<!-- ── MODAL CONFIRMAÇÃO ────────────────────────────────────── -->
+<div class="modal-overlay" id="confirmModal" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <div class="modal-icon">✅</div>
+    <h2>Agendamento enviado!</h2>
+    <p>Sua solicitação foi recebida. Nossa equipe entrará em contato para confirmar.</p>
+    <div class="modal-detail" id="modalDetail"></div>
+    <button class="btn-primary" onclick="closeModal()" style="width:100%;justify-content:center;">
+      Entendi, obrigado
+    </button>
+  </div>
+</div>
+
+<!-- ── TOAST ────────────────────────────────────────────────── -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- ── JAVASCRIPT ───────────────────────────────────────────── -->
+<script src="main.js"></script>
+
+</body>
+</html>
