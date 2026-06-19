@@ -1,0 +1,6 @@
+# Configurações locais privadas
+config.js
+
+# Sistema
+.DS_Store
+node_modules/
